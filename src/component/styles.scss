@@ -1,0 +1,81 @@
+.component {
+    width: 1024px;
+    height: 768px;
+    margin: auto;
+    display: flex;
+    border: 1px solid lightgray;
+    .area-title {
+        color: white;
+        padding: .25rem 0;
+        border-bottom: 1px solid lightgray;
+    }
+    .control-area {
+        width: calc(1024px - 680px);
+        background-color: black;
+        padding: 1rem;
+        text-align: left;
+        .control-section {
+            padding: .5rem 0;
+            border-bottom: 1px solid gray;
+            
+            .range-item {
+                padding: .5rem 0;
+                display: flex;
+                span {
+                    color: white;
+                }
+                .range-slider {
+                    width: 100%;
+                    margin: 0 .5rem;
+                }
+            }
+            .property-preview {
+                position: relative;
+                .section-title {
+                    color: lightgrey;
+                    font-size: 0.8rem;
+                }
+                .color-preview {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    width: 2rem;
+                    height: 1.5rem;
+                }
+                .size-preview {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    height: 1rem;
+                    background-color: white;
+                }
+            }
+            .control {
+                margin: .25rem;
+            }
+            .play-history {
+                display: flex;
+                .history-count {
+                    flex: 1;
+                    text-align: center;
+                    color: grey;
+                }
+            }
+        }
+    }
+    .canvas-area {
+        position: relative;
+        width: 680px;
+        background: black;
+        #canvas {
+            top: 0;
+            left: 0;
+            position: absolute;
+        }
+        #backCanvas {
+            top: 0;
+            left: 0;
+            position: absolute;
+        }
+    }
+}
